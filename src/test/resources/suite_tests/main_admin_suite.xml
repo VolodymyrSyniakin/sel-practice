@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Main Admin Suite" verbose="1">
+
+	<parameter name="login" value="webinar.test@gmail.com" />
+	<parameter name="password" value="Xcg7299bnSmMuRLp9ITw" />
+
+	<test name="Main Admin Tests [Chrome]">
+		<parameter name="browser" value="chrome" />
+		<packages>
+			<package name="tests.lecture02" />
+		</packages>
+	</test>
+
+</suite>

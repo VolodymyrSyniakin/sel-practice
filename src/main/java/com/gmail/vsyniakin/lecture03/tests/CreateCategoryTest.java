@@ -14,7 +14,7 @@ public class CreateCategoryTest extends BaseScript {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		System.setProperty("browser", BrowserType.CHROME);
+		System.setProperty("browser", BrowserType.FIREFOX);
 
 		EventFiringWebDriver driver = getConfiguredDriver(log);
 		GeneralActions actions = new GeneralActions(driver, log);

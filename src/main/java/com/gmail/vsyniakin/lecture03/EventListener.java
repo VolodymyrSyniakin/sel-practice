@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.logging.Logger;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
@@ -139,44 +138,10 @@ public class EventListener implements WebDriverEventListener {
 	}
 
 	@Override
-	public void beforeSwitchToWindow(String windowName, WebDriver driver) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void afterSwitchToWindow(String windowName, WebDriver driver) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void onException(Throwable throwable, WebDriver driver) {
 		// TODO Auto-generated method stub
 	}
 
-	@Override
-	public <X> void beforeGetScreenshotAs(OutputType<X> target) {
-		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public <X> void afterGetScreenshotAs(OutputType<X> target, X screenshot) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void beforeGetText(WebElement element, WebDriver driver) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void afterGetText(WebElement element, WebDriver driver, String text) {
-		// TODO Auto-generated method stub
-
-	}
 
 }

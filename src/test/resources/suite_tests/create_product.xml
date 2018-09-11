@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Create Product" verbose="1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+
+	<parameter name="login" value="webinar.test@gmail.com" />
+	<parameter name="password" value="Xcg7299bnSmMuRLp9ITw" />
+
+	<test name="Create New Product [Firefox]">
+		<parameter name="selenium.browser" value="firefox" />
+		<packages>
+			<package name="tests.lecture04" />
+		</packages>
+	</test> 
+
+	<test name="Create New Product [Chrome]">
+		<parameter name="selenium.browser" value="chrome" />
+		<packages>
+			<package name="tests.lecture04" />
+		</packages>
+	</test>
+
+ 	<test name="Create New Product [Internet Explorer]">
+		<parameter name="selenium.browser" value="ie" />
+		<packages>
+			<package name="tests.lecture04" />
+		</packages>
+	</test> 
+</suite>

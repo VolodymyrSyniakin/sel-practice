@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Products Management" verbose="1">
+	<suite-files>
+               <suite-file path="./suite_tests/create_product.xml" />  
+               <suite-file path="./suite_tests/order_product.xml" />
+    </suite-files>
+</suite>
+

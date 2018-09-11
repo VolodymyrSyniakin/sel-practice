@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Order" verbose="1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+
+	<parameter name="selenium.grid"
+		value="http://localhost:4444/wd/hub" />
+
+	<test name="Order Product [Android]">
+		<parameter name="selenium.browser" value="android" />
+		<packages>
+			<package name="tests.lecture05" />
+		</packages>
+	</test>
+
+	<test name="Order Product [Chrome]">
+		<parameter name="selenium.browser" value="chrome" />
+		<packages>
+			<package name="tests.lecture05" />
+		</packages>
+	</test>
+
+	<test name="Order Product [Firefox]">
+		<parameter name="selenium.browser" value="firefox" />
+		<packages>
+			<package name="tests.lecture05" />
+		</packages>
+	</test>
+
+	<test name="Order Product [Internet Explorer]">
+		<parameter name="selenium.browser" value="ie" />
+		<packages>
+			<package name="tests.lecture05" />
+		</packages>
+	</test>
+</suite>
